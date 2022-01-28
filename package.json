@@ -1,0 +1,25 @@
+{
+  "name": "airbnb_reviews_scrapper",
+  "version": "1.0.0",
+  "description": "The scrapper will get all the reviews of a room page .",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedRosh/Airbnb_reviews_scrapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedRosh/Airbnb_reviews_scrapper/issues"
+  },
+  "homepage": "https://github.com/RedRosh/Airbnb_reviews_scrapper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "puppeteer": "^13.1.2"
+  }
+}
