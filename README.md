@@ -58,5 +58,5 @@ _Here is the result for the following [room page](https://www.airbnb.com/rooms/4
 
 - [x] Init the project structure
 - [x] Implementing the scrapper
-- [ ] Handle network errors
-- [ ] Add meaningful logs
+- [x] Handle network errors
+- [x] Add meaningful logs

@@ -7,7 +7,8 @@ const URL =
 main = async () => {
   let url = process.argv.slice(2)[0] || URL;
   const airbnbScrapper = new AirbnbScrapper(url);
-  await airbnbScrapper.getData();
+  const data = await airbnbScrapper.getData();
+  console.log(data);
 };
 
 main();

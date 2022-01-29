@@ -20,6 +20,7 @@
   "homepage": "https://github.com/RedRosh/Airbnb_reviews_scrapper#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.10",
+    "colors": "^1.4.0",
     "puppeteer": "^13.1.2"
   }
 }
