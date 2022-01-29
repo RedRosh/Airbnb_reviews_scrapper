@@ -17,7 +17,7 @@ The scrapper will get all the reviews of an airbnb room page .
 ## To run the project :
 
 - ```
-  git clone https://github.com/RedRosh/Airbnb_reviews_scrapper.git
+  npm start
   ```
 
 ## Airbnb_reviews_scrapper :
