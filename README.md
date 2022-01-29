@@ -17,7 +17,7 @@ The scrapper will get all the reviews of an airbnb room page .
 ## To run the project :
 
 - ```
-  npm start
+  npm start https://www.airbnb.com/rooms/16371091
   ```
 
 ## Airbnb_reviews_scrapper :
