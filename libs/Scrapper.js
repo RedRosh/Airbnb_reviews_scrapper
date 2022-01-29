@@ -96,6 +96,7 @@ class AirbnbScrapper {
     });
     //* Redirecting to the url then opening the modal .
     const page = await browser.newPage();
+    page.setDefaultTimeout(0);
     await page.goto(this.url);
     await page.waitForSelector(".sijjzz2 > a:nth-child(1)");
     await page.click(".sijjzz2 > a:nth-child(1)");
