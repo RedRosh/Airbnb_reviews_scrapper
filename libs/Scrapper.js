@@ -101,7 +101,7 @@ class AirbnbScrapper {
           `${this.url}`
       );
       const browser = await pupeeterr.launch({
-        headless: true,
+        headless: false,
         args: ["--start-maximized"],
         defaultViewport: null,
       });
@@ -145,9 +145,11 @@ class AirbnbScrapper {
         reviews,
       };
     } catch (err) {
+      console.log(err);
       console.log(
         "[ Scrapper ]".blue.bold +
-          "Please use the script with a stable connection".red.bold
+          "The script encounter the following error \n".red.bold +
+          err
       );
     }
   }
