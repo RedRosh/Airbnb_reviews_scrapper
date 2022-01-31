@@ -137,10 +137,14 @@ class AirbnbScrapper {
           `Scrapping All the reviews successfully`.green
       );
       //* return the scrapping info .
-      return {
-        reviewSummary,
-        reviews,
-      };
+      return JSON.stringify(
+        {
+          reviewSummary,
+          reviews,
+        },
+        null,
+        "\t"
+      );
     } catch (err) {
       console.log(err);
       console.log(
