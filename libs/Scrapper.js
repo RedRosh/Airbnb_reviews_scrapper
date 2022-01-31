@@ -15,9 +15,7 @@ class AirbnbScrapper {
         var totalHeight = 0;
         var distance = 100;
         var timer = setInterval(() => {
-          let modal = document.querySelector(
-            "body > div:nth-child(38) > section > div > div > div._z4lmgp > div > div._17itzz4"
-          );
+          let modal = document.querySelector("._17itzz4");
           var scrollHeight = modal.scrollHeight;
           modal.scrollBy(0, distance);
           totalHeight += distance;
@@ -101,12 +99,13 @@ class AirbnbScrapper {
           `${this.url}`
       );
       const browser = await pupeeterr.launch({
-        headless: false,
+        headless: true,
         args: ["--start-maximized"],
         defaultViewport: null,
       });
       //* Redirecting to the url then opening the modal .
       const page = await browser.newPage();
+      page.setDefaultTimeout(0);
       await page.goto(this.url);
       console.log("[ Scrapper ] : ".blue.bold + `Opening the modal`.yellow);
       await page.waitForSelector(".sijjzz2 > a:nth-child(1)");
@@ -115,9 +114,7 @@ class AirbnbScrapper {
       console.log(
         "[ Scrapper ] : ".blue.bold + `Loading All the reviews`.yellow
       );
-      await page.waitForSelector(
-        "body > div:nth-child(38) > section > div > div > div._z4lmgp > div > div._17itzz4"
-      );
+      await page.waitForSelector("._17itzz4");
       //* Scrolling to render All reviews .
       console.log(
         "[ Scrapper ] : ".blue.bold +
